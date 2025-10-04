@@ -1,0 +1,99 @@
+:root {
+  --pl-pink: #D423C6;
+  --pl-black: #171512;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, pre, q {
+  color: var(--pl-pink);
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--pl-black);
+  padding: 24px;
+}
+
+.box {
+  border: 1px solid var(--pl-pink);
+  padding: 12px;
+  width: 90%;
+}
+
+.header {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 18px;
+}
+
+.blog-by {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.article-container {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.article-preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.article-image {
+  border-radius: 12px;
+}
+
+.article-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .block-title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .block-image {
+    width: 60%;
+  }
+}
