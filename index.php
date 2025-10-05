@@ -4,12 +4,12 @@ include 'api.php';
 $client = new APIClient();
 $articles = $client->get_articles(); 
 
-$locale = $_GET['tz'] ?? "UTC";
+$locale = $_GET['tz'] ?? "Europe/Ljubljana";
 ?>
 
 <html>
   <head>
-    <title>Plochevina</title>
+    <title>Plocheveena</title>
     <link rel="stylesheet" href="styles.css" />
     <script>
       (function() {
@@ -24,17 +24,17 @@ $locale = $_GET['tz'] ?? "UTC";
 
   <body>
     <div class="box header">
-      <!--<h1 class="title">Plochevina</h1>-->
       <pre>
-__________.__                .__                .__               
-\______   \  |   ____   ____ |  |__   _______  _|__| ____ _____   
- |     ___/  |  /  _ \_/ ___\|  |  \_/ __ \  \/ /  |/    \\__  \  
- |    |   |  |_(  <_> )  \___|   Y  \  ___/\   /|  |   |  \/ __ \_
- |____|   |____/\____/ \___  >___|  /\___  >\_/ |__|___|  (____  /
-                           \/     \/     \/             \/     \/ 
+__________.__                .__                                             
+\______   \  |   ____   ____ |  |__   _______  __ ____   ____   ____ _____   
+ |     ___/  |  /  _ \_/ ___\|  |  \_/ __ \  \/ // __ \_/ __ \ /    \\__  \  
+ |    |   |  |_(  <_> )  \___|   Y  \  ___/\   /\  ___/\  ___/|   |  \/ __ \_
+ |____|   |____/\____/ \___  >___|  /\___  >\_/  \___  >\___  >___|  (____  /
+                           \/     \/     \/          \/     \/     \/     \/ 
+
       </pre> 
       <p class="desc">Because apparently nobody has enough work or a life.</p>
-      <p class="blog-by">a blog by mišo pišo</p>
+      <p class="blog-by">a blog by mišo & kaja</p>
     </div>
 
     <br />
@@ -68,9 +68,9 @@ __________.__                .__                .__
       <br />
     <?php endforeach; ?>
 
-    <pre>
-      <?php print_r($articles["data"]); ?>
-    </pre>
+    <!--<pre style="width: 50vw; text-wrap: wrap;">
+      <?php #print_r($articles); ?>
+    </pre>-->
   </body>
 </html>
 
